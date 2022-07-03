@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/flip_backgradient"
+    tools:context=".HomeActivity">
+
+    <Button
+        android:id="@+id/logout1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:width="240dp"
+        android:height="50dp"
+        android:background="@drawable/ic_baseline_exit_to_app_24"
+        android:fontFamily="@font/cantarell_bold"
+        tools:ignore="HardcodedText" />
+
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#66A4D6"
+        app:itemIconTint="#251D3A"
+        app:itemTextColor="#251D3A"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

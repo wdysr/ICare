@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.DoctorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txtdoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/cinzeldecorative_bold"
+            android:text="OUR DOCTOR"
+            android:textColor="#251D3A"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtsubdoc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtdoc"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/cantarell_regular"
+            android:text="Available Doctor in Care Hospital."
+            android:textColor="#251D3A"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@id/txtsubdoc"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:id="@+id/layout_category"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/infcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/cantarell_bold"
+                android:text="Doctor yang Tersedia."
+                android:textColor="#251D3A"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doktoranak"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/layout_category"
+            android:background="@drawable/blue_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtanak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/cinzeldecorative_bold"
+                android:text="Spesialis Anak"
+                android:textColor="#251D3A"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtdoc1"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="1. dr. Ida Ayu Kusuma Dewi"
+                android:textColor="#251D3A"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/txtdoc2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="2. dr. Putu Vivi Paryati"
+                android:textColor="#251D3A"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/txtdoc3"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="3. dr. Ayu Nyoman Sita"
+                android:textColor="#251D3A"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doktorgigi"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/doktoranak"
+            android:background="@drawable/blue_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtgigi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/cinzeldecorative_bold"
+                android:text="Spesialis Gigi dan Mulut"
+                android:textColor="#251D3A"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtdoc4"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="1. dr. Putu Kuswidari"
+                android:textColor="#251D3A"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/txtdoc5"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="2. dr. Made Widya Swari"
+                android:textColor="#251D3A"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/doktorkulit"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/doktorgigi"
+            android:background="@drawable/blue_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtkulit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/cinzeldecorative_bold"
+                android:text="Spesialis Kulit"
+                android:textColor="#251D3A"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtdoc6"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="1. dr. I Made Birawan"
+                android:textColor="#251D3A"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/txtdoc7"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="2. dr. Angel Benny Wisan"
+                android:textColor="#251D3A"
+                android:textSize="13sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

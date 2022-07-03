@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_background"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/icarelogo2"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/img2"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/box_home"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/fgcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cantarell_bold"
+                android:text="Category"
+                android:textColor="#251D3A"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp">
+
+                <Button
+                    android:id="@+id/btnappointment"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/lemon_shape"
+                    android:fontFamily="@font/cantarell_bold"
+                    android:padding="10dp"
+                    android:text="Make a Appointment"
+                    android:textColor="#251D3A"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:id="@+id/btnhistory"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="130dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/orange_shape"
+                    android:fontFamily="@font/cantarell_bold"
+                    android:padding="10dp"
+                    android:text="Check Appointment"
+                    android:textColor="#251D3A"
+                    android:textSize="11sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/fgabout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/cantarell_bold"
+                android:text="About Us"
+                android:textColor="#251D3A"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+            <TextView
+                android:id="@+id/subabout"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="Aplikasi pendaftaran pasien klinik Care Hospital yang ingin melakukan pembuatan jadwal janji temu dengan dokter."
+                android:textColor="#716988"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

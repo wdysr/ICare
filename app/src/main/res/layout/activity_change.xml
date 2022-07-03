@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".ChangeActivity">
+
+    <Button
+        android:id="@+id/backupd"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_back"
+        android:fontFamily="@font/cantarell_bold"
+        android:text="Back"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtupdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/backupd"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/cinzeldecorative_bold"
+        android:text="Update Appointment"
+        android:textColor="#251D3A"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtsubupd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtupdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cantarell_regular"
+        android:gravity="center"
+        android:text="Make sure you change data correctly."
+        android:textColor="#251D3A"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/layout_date2"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtsubupd"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Date of Appointment"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_poli2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_date2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtpoli2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantarell_regular"
+            android:text="Anak / Gigi dan Mulut / Kulit"
+            android:textColor="#716988"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_poli3"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_poli2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erPoliklinik"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Write one of Policlinic"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_doctor2"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_poli3">
+
+        <TextView
+            android:id="@+id/doctor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantarell_regular"
+            android:text="Doctor's Name according at Information Page."
+            android:textColor="#716988"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_doctor3"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_doctor2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Write Doctor's Name"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_time2"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_doctor3"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Time of Appointment"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnchange"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_time2"
+        android:layout_marginTop="30dp"
+        android:width="240dp"
+        android:height="50dp"
+        android:background="@drawable/orange_shape"
+        android:fontFamily="@font/cantarell_bold"
+        android:gravity="center"
+        android:text="UPDATE APPOINTMENT"
+        android:textColor="#251D3A"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

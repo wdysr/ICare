@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/flip_backgradient"
+    tools:context=".DeleteActivity">
+
+    <TextView
+        android:id="@+id/txtdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/cinzeldecorative_bold"
+        android:text="ICare"
+        android:textColor="#251D3A"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+    <View
+        android:id="@+id/divider"
+        android:layout_below="@id/txtdelete"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C6C6C6" />
+
+    <LinearLayout
+        android:id="@+id/layout_card"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/blue_shape"
+        android:layout_below="@id/divider"
+        android:backgroundTint="#FFFFFF">
+
+        <TextView
+            android:id="@+id/erDoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/cinzeldecorative_bold"
+            android:text="Doctor's Name"
+            android:textColor="#FF9800"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/erPoliklinik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cantarell_regular"
+            android:text="Policlinic"
+            android:textColor="#716988"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/cantarell_bold"
+                android:text="Date : "
+                android:textColor="#251D3A"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/erDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="Date of Appointment"
+                android:textColor="#251D3A"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/txtTime1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/cantarell_bold"
+                android:text="Time : "
+                android:textColor="#251D3A"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/erTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="Time of Appointment"
+                android:textColor="#251D3A"
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fgacc"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_card"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/cantarell_bold"
+        android:text="Have you finished your appointment?"
+        android:textColor="#251D3A"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+    <TextView
+        android:id="@+id/subacc"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/fgacc"
+        android:fontFamily="@font/cantarell_regular"
+        android:text="If your appointment already finished, your booking schedule will be automatically delete by passing the complete button."
+        android:textColor="#716988"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/subacc"
+        android:layout_marginTop="30dp"
+        android:width="240dp"
+        android:height="50dp"
+        android:background="@drawable/lemon_shape"
+        android:fontFamily="@font/cantarell_bold"
+        android:gravity="center"
+        android:text="COMPLETE APPOINTMENT"
+        android:textColor="#251D3A"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="40dp"
+        android:src="@drawable/icarelogo1"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/cinzeldecorative_bold"
+            android:text="We take care try to heal aspire to cure"
+            android:layout_marginTop="300dp"
+            android:textColor="#251D3A"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/cantarell_regular"
+            android:gravity="center"
+            android:text="Make an doctor appointment from everywhere"
+            android:textColor="#251D3A"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:width="240dp"
+            android:height="50dp"
+            android:background="@drawable/orange_shape"
+            android:fontFamily="@font/cantarell_bold"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="#251D3A"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:width="240dp"
+            android:height="50dp"
+            android:background="@drawable/lemon_shape"
+            android:fontFamily="@font/cantarell_bold"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="#251D3A"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+</RelativeLayout>

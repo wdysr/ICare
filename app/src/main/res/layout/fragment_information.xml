@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.InformationFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/txtinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:fontFamily="@font/cinzeldecorative_bold"
+            android:text="OUR POLICLINIC"
+            android:textColor="#251D3A"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtsubinfo"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtinfo"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/cantarell_regular"
+            android:text="Our Policlinic and Specialist."
+            android:textColor="#251D3A"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_below="@id/txtsubinfo"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#C6C6C6" />
+
+        <LinearLayout
+            android:id="@+id/layout_category"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/infcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/cantarell_bold"
+                android:text="Poliklinik yang Tersedia."
+                android:textColor="#251D3A"
+                android:textSize="18sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/polianak"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/layout_category"
+            android:backgroundTint="#B1D5F1"
+            android:background="@drawable/blue_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtanak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/cinzeldecorative_bold"
+                android:text="Spesialis Anak"
+                android:textColor="#251D3A"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtsubanak"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="Layanan pemeriksaan dan pengobatan terhadap bayi dan anak sakit meliputi : Pemeriksaan Kesehatan Anak, Pemeriksaan Tumbuh Kembang Anak dan Imunisasi."
+                android:textColor="#716988"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/poligigi"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/polianak"
+            android:backgroundTint="#A2C1E8"
+            android:background="@drawable/blue_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtgigi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/cinzeldecorative_bold"
+                android:text="Spesialis Gigi dan Mulut"
+                android:textColor="#251D3A"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtsubgigi"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="Layanan seputar kesehatan gigi dan mulut. Mulai dari pemeriksaan, pembersihan, pengobatan hingga tindakan medis lebih lanjut."
+                android:textColor="#716988"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/polikulit"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/poligigi"
+            android:backgroundTint="#96B8E1"
+            android:background="@drawable/blue_shape"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtkulit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/cinzeldecorative_bold"
+                android:text="Dokter Poliklinik Kulit"
+                android:textColor="#251D3A"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/txtsubkulit"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/cantarell_regular"
+                android:text="Layanan seputar permasalahan kulit, kecantikan dan penyakit kelamin seperti alergi kulit, infeksi, kanker kulit dan lain-lain."
+                android:textColor="#251D3A"
+                android:textSize="11sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

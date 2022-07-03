@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".RegisterActivity">
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_back"
+        android:fontFamily="@font/cantarell_bold"
+        android:text="Back"
+        android:textSize="11sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnback"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/cinzeldecorative_bold"
+        android:text="Register"
+        android:textColor="#251D3A"
+        android:textSize="25sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/txtregister"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/cantarell_regular"
+        android:gravity="center"
+        android:text="Please enter your email dan mobile number correctly."
+        android:textColor="#251D3A"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtregister"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erFullName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Full Name"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_email"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_name"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Email"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_phone"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_email"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Phone Number"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_username"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/layout_phone"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erUsername"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Username"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_width="320dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_username"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/erPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:autofillHints=""
+            android:inputType="textPassword"
+            android:background="@drawable/box_form"
+            android:fontFamily="@font/cantarell_regular"
+            android:hint="Password"
+            android:paddingStart="15dp"
+            android:textSize="13sp"
+            tools:ignore="HardcodedText,RtlSymmetry,TextFields" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnregis"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/layout_password"
+        android:layout_marginTop="30dp"
+        android:width="240dp"
+        android:height="50dp"
+        android:background="@drawable/orange_shape"
+        android:fontFamily="@font/cantarell_bold"
+        android:gravity="center"
+        android:text="REGISTER"
+        android:textColor="#251D3A"
+        android:textSize="13sp"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnregis">
+
+        <TextView
+            android:id="@+id/txt_joined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantarell_regular"
+            android:text="Joined us before?"
+            android:textColor="#251D3A"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/txtclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cantarell_regular"
+            android:text="Sign In"
+            android:layout_marginStart="10dp"
+            android:textColor="#2196F3"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</RelativeLayout>
